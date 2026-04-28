@@ -1,0 +1,108 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing:border-box;
+}
+
+body { font-family: poppins,sans-serif;}
+
+/* Sticky Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+     margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+   font-weight: 700;
+}
+.nav-links a:hover{
+    color: blue;
+}
+/* Hero with Image Overlay */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 2rem; }
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+.btn {
+     padding: 10px 20px;
+     background: black;
+     color: white;
+     text-decoration: none;
+     margin: 10px;
+     border-radius: 5px;
+     font-size: large;
+    }
+.btn-secondary {
+     padding: 10px 20px;
+    background: black;
+     color: white;
+     text-decoration: none;
+     margin: 10px;
+     border-radius: 5px;
+     font-size: large;
+}
+/*sections*/
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin-top: 20px;
+}
+/*cards*/
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100px;
+    border-radius: 10px;   
+
+}
+/* Footer Styling */
+.main-footer { background: #333; color: white; padding: 50px 5%; margin-top: 50px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+.footer-links ul { list-style: none; padding: 0; }
+.footer-links a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+.footer-bottom { text-align: center; border-top: 1px solid #444; margin-top: 30px; padding-top: 20px; font-size: 0.8rem; }
