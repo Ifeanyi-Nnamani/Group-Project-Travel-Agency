@@ -143,8 +143,8 @@ header {
      text-decoration: none;
      margin: 10px;
      border-radius: 5px;
-     font-size: large;
-     font-weight: 800;
+     font-size:medium;
+     
     }
 .btn-secondary {
      padding: 10px 20px;
@@ -153,8 +153,8 @@ header {
      text-decoration: none;
      margin: 10px;
      border-radius: 5px;
-     font-size: large;
-     font-weight: 800;
+     font-size:medium;
+    
 }
      
 /*sections*/
@@ -163,14 +163,6 @@ section {
     text-align:justify;
     font-size: larger;
       
-}
-.Overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(6, 6, 19, 0.3);
 }
 
 .Destination{
@@ -379,6 +371,17 @@ img{
 }
 
 /* Responsive */
+@media( max-width:480px){
+    .hero h1{
+        font-size: 24px;/* smaller font for mobile*/
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+}
+
 @media(max-width:900px){
 .grid {grid-template-columns:repeat(2,1fr);}
 .contact {flex-direction:column;}
