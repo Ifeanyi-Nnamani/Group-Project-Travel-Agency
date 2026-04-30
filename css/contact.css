@@ -6,8 +6,8 @@
 }
 /* Logo icon */
 .logo span:nth-child(1) {
-    background-color: rgb(35, 35, 112); /* Blue background */
-    color: white; /* White text color */
+    background-color:white; /* white background */
+    color: rgb(35, 35, 112); /* White text color */
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
@@ -20,19 +20,12 @@
 
 /* Logo text (second child) */
 .logo h1:nth-child(2) {
-    font-weight: 1000; /* Semi-bold text */
-    color: rgba(00, 00, 05); /* gray text color*/
+    font-weight: 500; /* Semi-bold text */
+    color:white; /* white text color*/
     text-decoration: underline;
    
 }
-.logo h1 {
-  animation: colorchange 3s infinite;
-}
-@keyframes colorchange {
-    0% {color:red}
-    50% {color:blue}
-    100% {color:green}
-}
+
 header {
     position: sticky;
     top: 0;
@@ -63,11 +56,11 @@ header {
     color: whitesmoke;
     text-decoration: none;
     transition: 0.3s;
-    font-size: large;
-   font-weight: 700;
+    font-size:medium;
+   
 }
 .nav-links a:hover{
-    color: black;
+    color: blue;
 }
 /* Footer Styling */
 .main-footer { background: #333; color: white; padding: 50px 5%; margin-top: 50px; }

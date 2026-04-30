@@ -75,7 +75,7 @@ header {
    
 }
 .nav-links a:hover{
-    color: black;
+    color: blue;
 }
 /* Hero with Image Overlay */
 .hero {
@@ -309,7 +309,6 @@ img{
 
 }
 /* Footer Styling */
-
 .main-footer {
     background: #1f2937;
     color: #fff;
