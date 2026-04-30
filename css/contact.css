@@ -69,3 +69,32 @@ header {
 .nav-links a:hover{
     color: black;
 }
+/* Footer Styling */
+.main-footer { background: #333; color: white; padding: 50px 5%; margin-top: 50px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+.footer-links ul { list-style: none; padding: 0; }
+.footer-links a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+.footer-bottom { text-align: center; border-top: 1px solid #444; margin-top: 30px; padding-top: 20px; font-size: 0.8rem; }
+
+.social-icons i{
+    color: white;
+    font-size: large;
+    display: inline;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+    align-items: center;
+}
+.social-icons i {
+    color: #9ca3af;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.social-icons i:hover {
+    color: blue;
+}
+.go-top i ,a {
+    color: white;
+    font-size: large;
+}
