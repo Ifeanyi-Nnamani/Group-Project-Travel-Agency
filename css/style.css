@@ -123,6 +123,7 @@ header {
 }
 .hero-buttons:hover {
     animation: pulse 0.6s ease;
+    
 }
 @keyframes pulse{
     0% {transform: scale(1);}
@@ -131,7 +132,7 @@ header {
 }
 .btn {
      padding: 10px 20px;
-     background: black;
+     background: rgb(37, 35, 35);
      color: white;
      text-decoration: none;
      margin: 10px;
@@ -141,7 +142,7 @@ header {
     }
 .btn-secondary {
      padding: 10px 20px;
-     background: black;
+     background: rgb(37, 35, 35);
      color: white;
      text-decoration: none;
      margin: 10px;
