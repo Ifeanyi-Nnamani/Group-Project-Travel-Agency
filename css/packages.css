@@ -14,8 +14,8 @@
 }
 /* Logo icon */
 .logo span:nth-child(1) {
-    background-color: white; /* Blue background */
-    color:rgb(35, 35, 112); /* White text color */
+    background-color: white; /* white  background */
+    color:rgb(35, 35, 112); /* blue text color */
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
@@ -29,7 +29,7 @@
 /* Logo text (second child) */
 .logo h1:nth-child(2) {
     font-weight: 500; /* Semi-bold text */
-    color: white; /* gray text color*/
+    color: white; /* white text color*/
     text-decoration: underline;
    
 }

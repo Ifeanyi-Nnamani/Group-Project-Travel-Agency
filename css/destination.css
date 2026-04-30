@@ -22,8 +22,8 @@ main {
 }
 /* Logo icon */
 .logo span:nth-child(1) {
-    background-color:white ; /* Blue background */
-    color: rgb(35, 35, 112); /* White text color */
+    background-color:white ; /* white background */
+    color: rgb(35, 35, 112); /* blue text color */
     display: flex; /* Use flexbox for centering content */
     justify-content: center; /* Horizontally center content */
     align-items: center; /* Vertically center content */
