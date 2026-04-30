@@ -1,14 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #333;
+/* Logo container */
+.logo {
+    display: flex; /* Use flexbox to arrange logo items horizontally */
+    gap: 0.5rem; /* Space between logo icon and text (8px) */
+    align-items: center; /* Vertically center logo items */
 }
+/* Logo icon */
+.logo span:nth-child(1) {
+    background-color: rgb(35, 35, 112); /* Blue background */
+    color: white; /* White text color */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    width: 2rem; /* 32px width */
+    height: 2rem; /* 32px height (makes it a square) */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: larger; /* bold text */
+    
+}
+
+/* Logo text (second child) */
+.logo h1:nth-child(2) {
+    font-weight: 1000; /* Semi-bold text */
+    color: rgba(00, 00, 05); /* gray text color*/
+    text-decoration: underline;
+   
+}
+.logo h1 {
+  animation: colorchange 3s infinite;
+}
+@keyframes colorchange {
+    0% {color:red}
+    50% {color:blue}
+    100% {color:green}
+}
+
 
 /* HEADER - Transparent */
 header {
@@ -291,12 +324,34 @@ header.scrolled .desktop a {
     left: 0;
 }
 
-/* FOOTER */
-footer {
-    background:#000000;
+/* Footer Styling */
+.main-footer { background: #333; color: white; padding: 50px 5%; margin-top: 50px; }
+.footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+.footer-links ul { list-style: none; padding: 0; }
+.footer-links a { color: #ccc; text-decoration: none; display: block; margin-bottom: 10px; }
+.footer-bottom { text-align: center; border-top: 1px solid #444; margin-top: 30px; padding-top: 20px; font-size: 0.8rem; }
+
+.social-icons i{
     color: white;
-    text-align: center;
-    padding: 1.5rem;
+    font-size: large;
+    display: inline;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+    align-items: center;
+}
+.social-icons i {
+    color: #9ca3af;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.social-icons i:hover {
+    color: #ffffff;
+}
+.go-top i ,a {
+    color: white;
+    font-size: large;
 }
 
 /* RESPONSIVE BREAKPOINTS */

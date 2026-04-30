@@ -1,0 +1,71 @@
+/* Logo container */
+.logo {
+    display: flex; /* Use flexbox to arrange logo items horizontally */
+    gap: 0.5rem; /* Space between logo icon and text (8px) */
+    align-items: center; /* Vertically center logo items */
+}
+/* Logo icon */
+.logo span:nth-child(1) {
+    background-color: rgb(35, 35, 112); /* Blue background */
+    color: white; /* White text color */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    width: 2rem; /* 32px width */
+    height: 2rem; /* 32px height (makes it a square) */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: larger; /* bold text */
+    
+}
+
+/* Logo text (second child) */
+.logo h1:nth-child(2) {
+    font-weight: 1000; /* Semi-bold text */
+    color: rgba(00, 00, 05); /* gray text color*/
+    text-decoration: underline;
+   
+}
+.logo h1 {
+  animation: colorchange 3s infinite;
+}
+@keyframes colorchange {
+    0% {color:red}
+    50% {color:blue}
+    100% {color:green}
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 1rem 1.5rem;
+    position: relative;
+    
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li{
+     margin-left: 20px;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+   font-weight: 700;
+}
+.nav-links a:hover{
+    color: black;
+}
