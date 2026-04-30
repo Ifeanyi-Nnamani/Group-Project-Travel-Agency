@@ -3,96 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>luxury-vacation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!-- CDN for Montserrat Alternates font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- cdn for fontawesom -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="./CSS/contact.css">
 </head>
 <body>
-    <body>
-    <!-- 1. Navigation Bar -->
-     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <span><i class="fa-brands fa-avianex"></i></span>
-                <h1>Travel-Core Limited</h1>
-            </div>
-            <ul class="nav-links">
-                <li> <a href="#">Home</a> </li>
-                <li> <a href="destinations.html">Destinations</a> </li>
-                <li> <a href="packages.html">Packages</a></li>
-                <li> <a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>        
-            </ul>
-            
-        </nav>
-    </header>
-    <section  class="contact-us">
-        <div class="bond">
+        <!-- HERO -->
+    <section class="hero">
+        <h1>Plan Your Journey</h1>
+    </section>
+
+    <!-- MAIN -->
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- FORM -->
             <form>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="enter full name">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="example@gmail.com">
-                <label for="phone number":> Phone Number</label>
+                <h2>Booking Inquiry</h2>
 
-    <label>Phone Number: </label>
-                <input type="number" id="phone number" placeholder="+2347000000">
-                <label for="destination">Destination</label>
-                <select id="Destination">
-                    <option value="">Select an option</option>
-                    <option value="Paris">Paris</option>
-                    <option value="Bali Indonesia">Bali Indonesia</option>
-                    <option value="Cape Town South Africa">Cape Town South Africa</option>
-                    <option value="Dubai UAE">Dubai UAE</option>
-                    <option value="Sydney Australia">Sydney Australia</option>
-                    <option value="Barff Canada"> Barff Canada</option>
-                </select>
-                <label for="date">Date</label>
-                <input type="date" id="date">
-                <label for="nuber of  travelers">Number Of Travelers</label>
-                <input type="nunber" id="nuber of travelers" placeholder="10........">
-                <label for="budget range">Budget Range</label>
-                <select id="Budget Range">
-                    <option value="">Select options</option>
-                    <option value="paris">Paris $899</option>
-                    <option value="Bali Indonesia">Bali Indonesia $899</option>
-                    <option value="Cape Town South African">Cape Town South Africa $999</option>
-                    <option value="Dubai UAE">Dubai UAE $999</option>
-                    <option value="Sydney Australia">Sydney Australia $999</option>
-                    <option value="Barff Canada">Barff Canada $999</option> 
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                </div>
 
-                </select>
-                <label for="message">Message</label>
-                <input type="textarea" id="message" placeholder="special request">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Destination</label>
+                    <select>
+                        <option>Dubai</option>
+                        <option>Paris</option>
+                        <option>London</option>
+                        <option>New York</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Travel Start Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label>End Date</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Travelers</label>
+                    <input type="number" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label>Budget Range</label>
+                    <select>
+                        <option>$500 - $1000</option>
+                        <option>$1000 - $3000</option>
+                        <option>$3000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Special Requests</label>
+                    <textarea rows="4"></textarea>
+                </div>
+
+                <button type="submit">Submit Inquiry</button>
             </form>
-            <div class="info">
-                <h3>Contact information</h3>
-                <ul>
-                    <li>Office Address</li>
-                    <li>Phone And Email</li>
-                    <li>Business Hours</li>
-                    <li>Social Media Links</li>
-                    <li> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d507402.2091287014!2d3.7748941500000046!3d6.5115886000000085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1777344368391!5m2!1sen!2sng" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
-                </ul>
-                
 
+    <!-- CONTACT INFO -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Address:</strong> 12 Travel Street, Lagos</p>
+                <p><strong>Phone:</strong> +234 800 000 0000</p>
+                <p><strong>Email:</strong> info@travel.com</p>
+                <p><strong>Hours:</strong> Mon - Fri: 9am - 6pm</p>
 
-            </div>         
-            
+                <div class="socials">
+                    <p><strong>Follow Us:</strong></p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+
         </div>
 
+    <!-- MAP -->
+        <div class="map">
+            <iframe
+            src="https://maps.google.com/maps?q=lagos&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+    </div>
     </section>
+
+    
             <!--footer-->
+    <footer>
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
