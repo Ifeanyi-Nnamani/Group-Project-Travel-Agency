@@ -183,10 +183,11 @@ header {
 }
 .hero-content h1 {
     width: 20ch;
+    height: 50px;
     text-wrap: nowrap;
     overflow:hidden;
     padding: 50px;
-    line-height: 10px;
+    line-height: 5%;
     animation: typing 2s steps(20)infinite alternate-reverse;
 }
 @keyframes typing{
