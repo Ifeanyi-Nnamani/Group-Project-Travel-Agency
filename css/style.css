@@ -4,14 +4,7 @@
 * { margin: 0; 
     padding: 0; 
     box-sizing:border-box;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-main {
-    flex: 1;
+
 }
 /* Logo container */
 .logo {
@@ -29,7 +22,7 @@ main {
     width: 2rem; /* 32px width */
     height: 2rem; /* 32px height (makes it a square) */
     border-radius: 5px; /* Slightly rounded corners */
-    font-size: larger; /* bold text */
+    
     
 }
 
@@ -42,41 +35,97 @@ main {
 }
 
 header {
-    position: sticky;
+    width: 100%;
+    height: 4.5rem;
+    background:#1f2937; /* color header */
+    position: sticky; /*  sticky for hero*/
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.navbar {
-    display: flex;  
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1f2937;
-    padding: 1rem 1.5rem;
-    position: relative;
+    z-index: 1000;
+    padding: 0 2rem;
     
 }
 
-.nav-links {
+.logo { display: flex; align-items: center; gap: 10px; }
+
+
+.nav {
+    width: 100%;
+    height: 100%;
     display: flex;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.nav-links li{
-     margin-left: 20px;
+.desktop {
+    display: none;
+    align-items: center;
+    gap: 2rem;
 }
 
-.nav-links a {
-    color: whitesmoke;
+.desktop ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.desktop a {
     text-decoration: none;
-    transition: 0.3s;
-    font-size:medium;
-   
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
 }
-.nav-links a:hover{
-    color: blue;
+
+.desktop a:hover,
+.desktop a.active {
+    color:rgb(171, 171, 181);
 }
+
+/* MOBILE MENU */
+.mobile {
+    position: relative;
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.mobile-dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    top: 100%;     
+    right: 0;  
+    background: rgb(230, 228, 228);
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);      
+}
+
+
+
+.mobile-dropdown ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.mobile-dropdown a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.mobile:hover .mobile-dropdown {
+    display: flex;
+}
+
 /* Hero with Image Overlay */
 .hero {
     width: 100%;
@@ -93,28 +142,24 @@ header {
 
 
 .hero h1 { 
-    color: white;
+    color:white;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 500;
     z-index: 10;
     text-align: center;  
 }
 
 .hero p { 
-    font-size: 2.5rem;font-weight:lighter;
-    font-style: italic;
-    color: white;
+   color:white;
+    font-size: 1.5rem;
+     font-style:normal;
     text-align: center; 
-    font-weight: 700;     
+        
 }
-.Overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(6, 6, 19, 0.3);
-}
+
+
+    
+
 
 
 /* Buttons */
@@ -136,6 +181,22 @@ header {
     50% { transform: scale(1.08);}
     100% { transform: scale(1);}
 }
+.hero-content h1 {
+    width: 20ch;
+    text-wrap: nowrap;
+    overflow:hidden;
+    padding: 50px;
+    line-height: 10px;
+    animation: typing 2s steps(20)infinite alternate-reverse;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 200%;
+    }
+}
 .btn {
      padding: 10px 20px;
      background: rgb(92, 92, 92);
@@ -146,6 +207,7 @@ header {
      font-size:medium;
      
     }
+
 .btn-secondary {
      padding: 10px 20px;
      background: rgb(92, 92, 92);
@@ -370,18 +432,17 @@ img{
     font-size: 14px;
 }
 
-/* Responsive */
-@media( max-width:480px){
-    .hero h1{
-        font-size: 24px;/* smaller font for mobile*/
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-    .hero p{
-        font-size: 16px;
-    }
+
+/* RESPONSIVE BREAKPOINTS */
+@media (min-width: 768px) {
+    .desktop { display: flex; }
+    .mobile { display: none; }
+    .hero h1 { font-size: 3.5rem; }
 }
 
+@media (max-width: 767px) {
+    header { padding: 0 1rem; }
+}
 @media(max-width:900px){
 .grid {grid-template-columns:repeat(2,1fr);}
 .contact {flex-direction:column;}
