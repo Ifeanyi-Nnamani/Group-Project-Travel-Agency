@@ -60,6 +60,7 @@ header {
 .desktop {
     display: none;
     align-items: center;
+      margin-left: auto;
     gap: 2rem;
 }
 
@@ -67,6 +68,8 @@ header {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+   
+   
 }
 
 .desktop a {
@@ -84,6 +87,7 @@ header {
 /* MOBILE MENU */
 .mobile {
     position: relative;
+    margin-left: auto;
 }
 
 .menu-toggle {
@@ -157,10 +161,6 @@ header {
     font-weight: bold;
         
 }
-
-
-    
-
 
 
 /* Buttons */
