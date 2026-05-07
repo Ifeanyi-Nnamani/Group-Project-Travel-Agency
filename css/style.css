@@ -201,7 +201,7 @@ header {
 }
 .btn {
      padding: 10px 20px;
-     background: rgb(92, 92, 92);
+     background:  rgb(156, 156, 91);
      color: white;
      text-decoration: none;
      margin: 10px;
@@ -212,7 +212,7 @@ header {
 
 .btn-secondary {
      padding: 10px 20px;
-     background: rgb(92, 92, 92);
+     background:  rgb(156, 156, 91);
      color: white;
      text-decoration: none;
      margin: 10px;
