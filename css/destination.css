@@ -35,7 +35,8 @@ main {
 }
 /* Logo text (second child) */
 .logo h1:nth-child(2) {
-    font-weight: 500; /* Semi-bold text */
+     font-weight: 100; /* Semi-bold text */
+    font-size: large;
     color:white; /*  text color*/
     text-decoration: underline;
    
@@ -55,8 +56,6 @@ header {
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.logo { display: flex; align-items: center; gap: 10px; }
-
 
 .nav {
     width: 100%;
