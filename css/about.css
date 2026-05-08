@@ -53,8 +53,6 @@ header {
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.nav-links { display: flex; list-style: none; gap: 20px; }
-.nav-links a { text-decoration: none; color: #333; font-weight: bold; }
 
 header {
     width: 100%;
@@ -68,8 +66,6 @@ header {
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.nav-links { display: flex; list-style: none; gap: 20px; }
-.nav-links a { text-decoration: none; color: #333; font-weight: bold; }
 
 .nav {
     width: 100%;
@@ -83,6 +79,7 @@ header {
 .desktop {
     display: none;
     align-items: center;
+      margin-left: auto;
     gap: 2rem;
 }
 
@@ -90,6 +87,8 @@ header {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+   
+   
 }
 
 .desktop a {
@@ -107,6 +106,7 @@ header {
 /* MOBILE MENU */
 .mobile {
     position: relative;
+    margin-left: auto;
 }
 
 .menu-toggle {
@@ -329,6 +329,11 @@ img{
 .Statictics h4{
     font-weight: 800;
     font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+    .desktop { display: flex; }
+    .mobile { display: none; }
+    .hero h1 { font-size: 3.5rem; }
 }
 
 @media (min-width: 768px) {
