@@ -55,8 +55,8 @@ header {
 }
 
 .logo { display: flex; align-items: center; gap: 10px; }
-.nav-links { display: flex; list-style: none; gap: 20px; }
-.nav-links a { text-decoration: none; color: #333; font-weight: bold; }
+.logo { display: flex; align-items: center; gap: 10px; }
+
 
 .nav {
     width: 100%;
@@ -70,14 +70,16 @@ header {
 .desktop {
     display: none;
     align-items: center;
+      margin-left: auto;
     gap: 2rem;
-    margin-left: auto;
 }
 
 .desktop ul {
     display: flex;
     gap: 2.5rem;
     list-style: none;
+   
+   
 }
 
 .desktop a {
@@ -95,6 +97,7 @@ header {
 /* MOBILE MENU */
 .mobile {
     position: relative;
+    margin-left: auto;
 }
 
 .menu-toggle {
@@ -136,6 +139,7 @@ header {
 .mobile:hover .mobile-dropdown {
     display: flex;
 }
+
 
 .Hero{
     width: 100%;
@@ -302,6 +306,13 @@ img{
     font-size: 14px;
 }
 
+
+/* RESPONSIVE BREAKPOINTS */
+@media (min-width: 768px) {
+    .desktop { display: flex; }
+    .mobile { display: none; }
+    .hero h1 { font-size: 3.5rem; }
+}
 
 @media (min-width: 768px) {
     .Hero{
