@@ -32,7 +32,7 @@ color: #333;
 
 /* Logo text (second child) */
 .logo h1:nth-child(2) {
-    font-weight: 500; /* Semi-bold text */
+    font-weight: 300; /* Semi-bold text */
     color:white; /* white text color*/
     text-decoration: underline;
    
