@@ -11,9 +11,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-main {
-    flex: 1;
-}
+
 
 .logo {
     display: flex; /* Use flexbox to arrange logo items horizontally */
@@ -41,8 +39,6 @@ main {
     text-decoration: underline;
    
 }
-
-
 
 header {
     width: 100%;
@@ -304,8 +300,6 @@ img{
     text-align: center;
     font-size: 14px;
 }
-
-
 /* RESPONSIVE BREAKPOINTS */
 @media (min-width: 768px) {
     .desktop { display: flex; }
